@@ -6,7 +6,7 @@ def binary_search(arr, x):
     value = None
 
     while low <= high:
-
+        count += 1
         mid = (high + low) // 2
 
         # якщо x більше за значення посередині списку, ігноруємо ліву половину
@@ -29,7 +29,7 @@ def binary_search(arr, x):
 
 if __name__ == '__main__':
     arr = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
-    keys = [0.5, 0.63, 1.2]
+    keys = [0.2, 0.63, 1.2]
 
     for key in keys:
         print(f'{key} - {binary_search(arr, key)}')
